@@ -1,0 +1,5 @@
+# Machine Learning VS Statistical Learning
+
+Scientific, technical and computer advances in recent years have greatly enhanced the ca- pacity to measure, store and process data. However, dealing with high-dimensional data leads to other issues such as scattered data, increase dissimilarities between individuals...
+Then to overcome this issues, we need to find the most efficient algorithm to select only the relevant explanatory variables of a model among a large number of variables. There are several variable selection approaches. These approaches are classified into two main categories: Statistical Learning and Machine Learning.
+In this paper, we will investigate whether Statistical Learning and Machine Learning algorithms perform efficiently after presenting them. To do so, we will develop four distinct Data Generating Processes and test each algorithm with different information criteria. Finally, we will figure out which algorithm is the most efficient and under what conditions.
