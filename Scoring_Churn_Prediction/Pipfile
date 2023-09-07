@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "==2.0.3"
+numpy = "==1.24"
+pyyaml = "*"
+unidecode = "*"
+scikit-learn = "*"
+skimpy = "*"
+category-encoders = "*"
+joblib = "*"
+xgboost = "*"
+shap = "*"
+seaborn = "*"
+optuna = "*"
+scikit-plot = "*"
+tqdm = "*"
+streamlit = "*"
+importlib-resources = "*"
+pytest = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.2"
