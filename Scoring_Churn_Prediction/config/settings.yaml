@@ -1,0 +1,53 @@
+random_state: 14
+
+data:
+  raw_data_path: data/raw/base_projet_teleco.csv
+  external_data_path: data/external/marque_telephone.csv
+  df_train : data/processed/df_train.csv
+  df_val : data/processed/df_val.csv
+  x_train : data/interim_demo/x_test1.csv
+  x_val : data/interim_demo/x_test2.csv
+
+features_info:
+  target: "AFTERGRACE_FLAG"
+  new_features:
+  columns_to_drop: ['PASS_AFTERGRACE_IND_M1',
+                    'INC_DURATION_MINS_M1',
+                    'INC_PROP_OPE2_MIN_M3',
+                    'OUT_DURATION_MINS_M1',
+                    'OUT_DURATION_MINS_M3',
+                    'OUT_INT_DURATION_MINS_M3',
+                    'OUT_VMACC_NO_CALLS_M1',
+                    'INC_OUT_PROP_DUR_MIN_M1']
+
+encoding_scaling:
+  list_cont_col:
+  list_binary_col:
+  list_cat_col_OHE: ['CUSTOMER_GENDER']
+  list_cat_col_TE: ['marque']
+
+models: models/scoring_model.pkl
+optimisation_metric: "f1_micro"
+
+reports:
+  EDA :
+    df_train_summary: 
+    target_distrib_groupby_cat_features: "reports/EDA/target_distrib_groupby_"
+    target_distrib_groupby_num_features: "reports/EDA/target_distrib_groupby_"
+    corr_matrix_df_train: reports/EDA/corr_matrix_df_train.png
+  Model_result_analysis:
+    CONFUSION_MATRIX: reports/Model_result_analysis/CONFUSION_MATRIX.png
+    ROC_AUC_curve:  reports/Model_result_analysis/ROC_AUC_curve.png
+    LIFT_CURVE:  reports/Model_result_analysis/LIFT_CURVE.png
+    LEARNING_CURVE:  reports/Model_result_analysis/LEARNING_CURVE.png
+    BEST_THRESHOLD : 0.42
+  Features_impact_analysis:
+    SHAP_explainer_summary: reports/Features_impact_analysis/SHAP_summary_plot.pdf
+
+logging:
+  log_file_path: logs/log.txt
+  log_level: INFO
+
+streamlit:
+  page_title: "Spending Score Prediction Web App"
+  page_icon: ":bar_chart:"
