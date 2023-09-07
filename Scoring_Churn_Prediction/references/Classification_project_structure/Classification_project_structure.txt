@@ -16,11 +16,6 @@ Classification_project/
  ┃ ┃ ┗ 📜df_val.csv
  ┃ ┗ 📂raw
  ┃ ┃ ┗ 📜base_projet_teleco.csv
- ┣ 📂docs
- ┃ ┗ 📂Project_structure_examples
- ┃ ┃ ┣ 📜Project_structure1.jpg
- ┃ ┃ ┣ 📜Project_structure2.png
- ┃ ┃ ┗ 📜Unknown_file.txt
  ┣ 📂models
  ┃ ┗ 📜scoring_model.pkl
  ┣ 📂notebooks
@@ -30,7 +25,6 @@ Classification_project/
  ┣ 📂references
  ┃ ┣ 📂Classification_project_structure
  ┃ ┃ ┗ 📜Classification_project_structure.txt
- ┃ ┗ 📜install_guide.txt
  ┣ 📂reports
  ┃ ┣ 📂EDA
  ┃ ┃ ┣ 📜corr_matrix_df_train.png
